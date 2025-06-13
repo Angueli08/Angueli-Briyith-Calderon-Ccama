@@ -2,66 +2,115 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Ficha Personal</title>
+  <title>Ficha Personal - Angueli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f5f5f5;
-    }
-    .ficha {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      text-align: center;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      padding: 40px;
       color: #333;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
+
+    .card {
+      background-color: #fff;
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
+
+    .card h1 {
+      font-size: 2em;
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      margin: 10px 0;
+      font-size: 1.05em;
+    }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    .section h2 {
+      font-size: 1.4em;
+      color: #34495e;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 4px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 15px;
+    }
+
     li {
       margin: 8px 0;
+      padding-left: 12px;
+      position: relative;
     }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.2em;
+    }
+
     a {
-      color: #007BFF;
+      color: #3498db;
       text-decoration: none;
+      font-weight: 500;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="ficha">
+  <div class="card">
     <h1>Ficha Personal</h1>
-    <p><strong>Nombre:</strong> Angueli Briyith Calderon Ccama</p>
-    <p><strong>Carrera:</strong> Administracion de negocios</p>
-    <p><strong>Semestre:</strong> 5° semestre</p>
+    <div class="info">
+      <p><strong>Nombre:</strong> Angueli Briyith Calderón Ccama</p>
+      <p><strong>Carrera:</strong> Administración de Negocios</p>
+      <p><strong>Semestre:</strong> 5° semestre</p>
+    </div>
 
-    <h2>Cursos</h2>
-    <ul>
-      <li>Cálculo en una variable - Maribel Quiroz</li>
-      <li>Pensamiento computacional - Ernesto Cuadros</li>
-      <li>Estadística y probabilidades - Daniel Huanca</li>
-      <li>Startups I - Karen Gutierrez</li>
-	  <li>Moral - Roger Silva</li>
-	  <li>Desarrollo de habilidades de Negociación - Renzo Menchola</li>
-	  <li>Análisis, Diseño y gestion de Procesos - Alfredo Salinas</li>
-	  
-    </ul>
+    <div class="section">
+      <h2>Cursos</h2>
+      <ul>
+        <li>Cálculo en una Variable – Maribel Quiroz</li>
+        <li>Pensamiento Computacional – Ernesto Cuadros</li>
+        <li>Estadística y Probabilidades – Daniel Huanca</li>
+        <li>Startups I – Karen Gutiérrez</li>
+        <li>Moral – Roger Silva</li>
+        <li>Desarrollo de Habilidades de Negociación – Renzo Menchola</li>
+        <li>Análisis, Diseño y Gestión de Procesos – Alfredo Salinas</li>
+      </ul>
+    </div>
 
-    <h2>Compañeros de clase</h2>
-    <ul>
-      <li><a href="https://perfil.com/maria_gomez" target="_blank">María Gómez</a></li>
-      <li><a href="https://perfil.com/carlos_ruiz" target="_blank">Carlos Ruiz</a></li>
-      <li><a href="https://perfil.com/lucia_mendez" target="_blank">Lucía Méndez</a></li>
-    </ul>
+    <div class="section">
+      <h2>Compañeros de Clase</h2>
+      <ul>
+        <li><a href="https://perfil.com/maria_gomez" target="_blank">María Gómez</a></li>
+        <li><a href="https://perfil.com/carlos_ruiz" target="_blank">Carlos Ruiz</a></li>
+        <li><a href="https://perfil.com/lucia_mendez" target="_blank">Lucía Méndez</a></li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
