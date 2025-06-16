@@ -6,13 +6,12 @@
     <meta name="KEYWORD" content="Angueli Briyith Calderon Ccama">
     <title>Angueli Briyith Calderon Ccama</title>
     <style>
-        /* General styling */
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #B0E0E6;
             margin: 0;
             padding: 0;
-            color: 	#4682B4;
+            color: #4682B4;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -21,7 +20,7 @@
         h1 {
             text-align: center;
             color: #B0E0E6;
-            background-color: 	#4682B4;
+            background-color: #4682B4;
             padding: 20px;
             border-radius: 10px;
             margin: 20px 0;
@@ -31,7 +30,7 @@
 
         a {
             text-decoration: none;
-            color: 	#4682B4;
+            color: #4682B4;
             font-weight: bold;
         }
 
@@ -45,10 +44,6 @@
             width: 90%;
         }
 
-        ul ul {
-            padding-left: 20px;
-        }
-
         li {
             margin: 10px 0;
         }
@@ -58,7 +53,7 @@
             width: 90%;
             padding: 20px;
             margin: 10px 0;
-            background: linear-gradient(135deg, #B0E0E6, 	#4682B4);
+            background: linear-gradient(135deg, #B0E0E6, #4682B4);
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: justify;
@@ -70,7 +65,6 @@
             line-height: 1.6;
         }
 
-        /* Remove unnecessary borders */
         .clean-list {
             border: none;
             padding: 0;
@@ -81,11 +75,64 @@
             margin: 0;
         }
 
-        /* Adjust text inside lists */
         .course-list {
             margin-left: 10px;
             padding: 5px;
             border-left: 2px solid #ffc1d3;
+        }
+
+        .dropdown-btn {
+            background-color: #ADD8E6;
+            color: rgb(77, 7, 73);
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            width: 53%;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .dropdown-btn:hover {
+            background-color: #87CEEB;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            list-style-type: none;
+            margin: 0;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .dropdown-content li {
+            padding: 10px 0;
+        }
+
+        .dropdown-content li a {
+            text-decoration: none;
+            color: #4682B4;
+        }
+
+        .dropdown-content li a:hover {
+            color: #b02772;
+        }
+
+        .show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+            }
         }
     </style>
 </head>
@@ -95,23 +142,20 @@
 
     <div class="content-box">
         <h3>Hola, mi nombre es Angueli Briyith Calderon Ccama</h3>
-        <p>Tengo 19 años, actualmente estoy en quinto semestre de la carrera de Administración de Negocios en la Universidad Católica San Pablo y resido en la ciudad de Arequipa.<p>
+        <p>Tengo 19 años, actualmente estoy en quinto semestre de la carrera de Administración de Negocios en la Universidad Católica San Pablo y resido en la ciudad de Arequipa.</p>
+    </div>
 
     <div class="content-box">
         <h2>Estudios</h2>
         <ul>
             <li><strong>Educación Primaria y Secundaria:</strong>
                 <ul class="clean-list">
-                    <li><a href="https://web.facebook.com/CERSANTACATALINAJULIACA/?locale=es_LA&_rdc=1&_rdr#/">Colegio Santa Catalina</a></li>
+                    <li><a href="https://web.facebook.com/CERSANTACATALINAJULIACA/">Colegio Santa Catalina</a></li>
                 </ul>
             </li>
             <li><strong>Educación Superior y Complementaria:</strong>
-                <ul class="clean-list">
-        
-                        <ul class="course-list">
-                            <li>Actualmente cursando la carrera de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/">Administración de Empresas</a></li>
-                        </ul>
-                    </li>
+                <ul class="clean-list course-list">
+                    <li>Actualmente cursando la carrera de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/">Administración de Empresas</a></li>
                 </ul>
             </li>
         </ul>
@@ -120,100 +164,30 @@
     <div class="content-box">
         <h2>UCSP</h2>
         <p><strong>Cursos que estoy llevando en el 5º semestre:</strong></p>
-        <ul class="clean-list">
+        <ul class="clean-list course-list">
             <li><strong>Cálculo en una variable</strong> - Docente: <a href="https://www.linkedin.com/in/maribel-marianela-8453a61a7/">Maribel Quiroz</a></li>
-            <li><strong>Pensamiento computacional</strong> - Docente: <a href="https://www.linkedin.com/in/ecuadrosv/">Ernesto Cuadros</li>
-            <li><strong>Estadística y probabilidades</strong> - Docente:Daniel Huanca</li>
+            <li><strong>Pensamiento computacional</strong> - Docente: <a href="https://www.linkedin.com/in/ecuadrosv/">Ernesto Cuadros</a></li>
+            <li><strong>Estadística y probabilidades</strong> - Docente: Daniel Huanca</li>
             <li><strong>Startups I</strong> - Docente: <a href="https://www.linkedin.com/in/karenguti%C3%A9rrezmart%C3%ADnez/">Karen Gutierrez</a></li>
-            <li><strong>Análisis, Diseño y gestion de Procesos</strong> - Docente: <a href="https://www.linkedin.com/in/alfredo-salinas-49a994151/">Alfredo Salinas</a></li>
+            <li><strong>Análisis, Diseño y gestión de Procesos</strong> - Docente: <a href="https://www.linkedin.com/in/alfredo-salinas-49a994151/">Alfredo Salinas</a></li>
             <li><strong>Desarrollo de habilidades de Negociación</strong> - Docente: <a href="https://www.linkedin.com/in/rmenchola/">Renzo Menchola</a></li>
-            <style>
-                /* Estilo para el botón desplegable */
-                .dropdown-btn {
-                    background-color: #ADD8E6; /* Morado de la paleta */
-                    color: rgb(77, 7, 73);
-                    padding: 10px 20px;
-                    border: none;
-                    font-size: 16px;
-                    cursor: pointer;
-                    border-radius: 5px;
-                    display: block;
-                    width: 53%;
-                    text-align: left;
-                    font-weight: bold;
-                }
-        
-                .dropdown-btn:hover {
-                    background-color: #ADD8E6; /* Cambio de color al pasar el ratón */
-                }
-        
-                /* Estilo para el contenido desplegable */
-                .dropdown-content {
-                    display: none;
-                    position: absolute;
-                    background-color: #ffffff;
-                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-                    padding: 10px 20px; /* Ajuste de márgenes */
-                    list-style-type: none;
-                    margin: 0;
-                    width: 300px; /* Ajuste del ancho */
-                    border-radius: 5px; /* Esquinas redondeadas */
-                }
-        
-                .dropdown-content li {
-                    padding: 10px 20px;
-                    font-size: 14px; /* Tamaño de fuente más pequeño */
-                }
-        
-                .dropdown-content li a {
-                    text-decoration: none;
-                    color: #B0C4DE;
-                }
-        
-                .dropdown-content li a:hover {
-                    color: #b02772; /* Color cuando se pasa el ratón sobre los enlaces */
-                }
-        
-                /* Mostrar el contenido desplegable cuando el botón es clickeado */
-                .show {
-                    display: block;
-                }
-        
-                /* Para hacer el comportamiento visible en dispositivos móviles */
-                @media (max-width: 768px) {
-                    .dropdown-content {
-                        position: static;
-                        box-shadow: none;
-                    }
-                }
-            </style>
-                    <ul class="course-list">
-                        <!-- Botón desplegable para compañeros -->
-                        <li>
-                            <button class="dropdown-btn" onclick="toggleDropdown()">Compañeros</button>
-                            <ul class="dropdown-content" id="dropdown-list">
-                              <li><a href="https://jimenaq25.github.io/Jimena-Sofia-Quiroz-Bautista/" target="_blank">Jimena Quiroz Bautista</a></li>
-                              <li><a href="https://ismael-caceres.github.io/Ismael-Valentin-Caceres-Gallegos/" target="_blank">Ismael Caceres Gallegos</a></li>
-                              <li><a href="https://perfil.com/lucia_mendez" target="_blank">Lucía Méndez</a></li>
-                                
-                      
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        
-            <script>
-                // Función para alternar la visibilidad de la lista de compañeros
-                function toggleDropdown() {
-                    var dropdown = document.getElementById("dropdown-list");
-                    dropdown.classList.toggle("show");
-                }
-            </script>
-              
+            <li>
+                <button class="dropdown-btn" onclick="toggleDropdown()">Compañeros</button>
+                <ul class="dropdown-content" id="dropdown-list">
+                    <li><a href="https://jimenaq25.github.io/Jimena-Sofia-Quiroz-Bautista/" target="_blank">Jimena Quiroz Bautista</a></li>
+                    <li><a href="https://ismael-caceres.github.io/Ismael-Valentin-Caceres-Gallegos/" target="_blank">Ismael Caceres Gallegos</a></li>
+                    <li><a href="https://perfil.com/lucia_mendez" target="_blank">Lucía Méndez</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-list");
+            dropdown.classList.toggle("show");
+        }
+    </script>
+
 </body>
 </html>
-
