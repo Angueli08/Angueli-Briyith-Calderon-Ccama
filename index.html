@@ -1,193 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="KEYWORD" content="Angueli Briyith Calderon Ccama">
-    <title>Angueli Briyith Calderon Ccama</title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #B0E0E6;
-            margin: 0;
-            padding: 0;
-            color: #4682B4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keyword" content="Angueli Briyith Calderon Ccama" />
+  <title>Angueli Briyith Calderon Ccama</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #E0F7FA;
+      color: #0277BD;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        h1 {
-            text-align: center;
-            color: #B0E0E6;
-            background-color: #4682B4;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            width: 90%;
-        }
+    header {
+      background-color: #00ACC1;
+      color: white;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        a {
-            text-decoration: none;
-            color: #4682B4;
-            font-weight: bold;
-        }
+    main {
+      max-width: 900px;
+      width: 90%;
+      margin: 20px 0;
+    }
 
-        a:hover {
-            color: #B0E0E6;
-        }
+    section {
+      background-color: #ffffff;
+      border-left: 5px solid #4DD0E1;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            width: 90%;
-        }
+    h2 {
+      color: #007C91;
+      margin-bottom: 10px;
+    }
 
-        li {
-            margin: 10px 0;
-        }
+    p, li {
+      line-height: 1.6;
+    }
 
-        .content-box {
-            max-width: 800px;
-            width: 90%;
-            padding: 20px;
-            margin: 10px 0;
-            background: linear-gradient(135deg, #B0E0E6, #4682B4);
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
+    a {
+      color: #0288D1;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .content-box h3, .content-box p {
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+    a:hover {
+      color: #004D40;
+    }
 
-        .clean-list {
-            border: none;
-            padding: 0;
-        }
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
 
-        .clean-list li {
-            padding: 5px 0;
-            margin: 0;
-        }
+    /* Dropdown */
+    .dropdown {
+      margin-top: 10px;
+    }
 
-        .course-list {
-            margin-left: 10px;
-            padding: 5px;
-            border-left: 2px solid #ffc1d3;
-        }
+    .dropdown-btn {
+      background-color: #4DD0E1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
 
-        .dropdown-btn {
-            background-color: #ADD8E6;
-            color: rgb(77, 7, 73);
-            padding: 10px 20px;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            display: block;
-            width: 53%;
-            text-align: left;
-            font-weight: bold;
-        }
+    .dropdown-btn:hover {
+      background-color: #00ACC1;
+    }
 
-        .dropdown-btn:hover {
-            background-color: #87CEEB;
-        }
+    .dropdown-content {
+      display: none;
+      margin-top: 10px;
+      background-color: #E0F7FA;
+      border-radius: 6px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #ffffff;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            padding: 10px 20px;
-            list-style-type: none;
-            margin: 0;
-            width: 300px;
-            border-radius: 5px;
-        }
+    .dropdown-content a {
+      display: block;
+      margin: 5px 0;
+    }
 
-        .dropdown-content li {
-            padding: 10px 0;
-        }
-
-        .dropdown-content li a {
-            text-decoration: none;
-            color: #4682B4;
-        }
-
-        .dropdown-content li a:hover {
-            color: #b02772;
-        }
-
-        .show {
-            display: block;
-        }
-
-        @media (max-width: 768px) {
-            .dropdown-content {
-                position: static;
-                box-shadow: none;
-            }
-        }
-    </style>
+    .show {
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
+  <header>
     <h1>Angueli Briyith Calderon Ccama</h1>
+  </header>
 
-    <div class="content-box">
-        <h3>Hola, mi nombre es Angueli Briyith Calderon Ccama</h3>
-        <p>Tengo 19 años, actualmente estoy en quinto semestre de la carrera de Administración de Negocios en la Universidad Católica San Pablo y resido en la ciudad de Arequipa.</p>
-    </div>
+  <main>
 
-    <div class="content-box">
-        <h2>Estudios</h2>
-        <ul>
-            <li><strong>Educación Primaria y Secundaria:</strong>
-                <ul class="clean-list">
-                    <li><a href="https://web.facebook.com/CERSANTACATALINAJULIACA/">Colegio Santa Catalina</a></li>
-                </ul>
-            </li>
-            <li><strong>Educación Superior y Complementaria:</strong>
-                <ul class="clean-list course-list">
-                    <li>Actualmente cursando la carrera de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/">Administración de Empresas</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <section>
+      <h2>Sobre mí</h2>
+      <p>Hola, mi nombre es <strong>Angueli Briyith Calderon Ccama</strong>, tengo 19 años. Actualmente estoy en el quinto semestre de la carrera de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank">Administración de Negocios</a> en la Universidad Católica San Pablo y resido en la ciudad de Arequipa.</p>
+    </section>
 
-    <div class="content-box">
-        <h2>UCSP</h2>
-        <p><strong>Cursos que estoy llevando en el 5º semestre:</strong></p>
-        <ul class="clean-list course-list">
-            <li><strong>Cálculo en una variable</strong> - Docente: <a href="https://www.linkedin.com/in/maribel-marianela-8453a61a7/">Maribel Quiroz</a></li>
-            <li><strong>Pensamiento computacional</strong> - Docente: <a href="https://www.linkedin.com/in/ecuadrosv/">Ernesto Cuadros</a></li>
-            <li><strong>Estadística y probabilidades</strong> - Docente: Daniel Huanca</li>
-            <li><strong>Startups I</strong> - Docente: <a href="https://www.linkedin.com/in/karenguti%C3%A9rrezmart%C3%ADnez/">Karen Gutierrez</a></li>
-            <li><strong>Análisis, Diseño y gestión de Procesos</strong> - Docente: <a href="https://www.linkedin.com/in/alfredo-salinas-49a994151/">Alfredo Salinas</a></li>
-            <li><strong>Desarrollo de habilidades de Negociación</strong> - Docente: <a href="https://www.linkedin.com/in/rmenchola/">Renzo Menchola</a></li>
-            <li>
-                <button class="dropdown-btn" onclick="toggleDropdown()">Compañeros</button>
-                <ul class="dropdown-content" id="dropdown-list">
-                    <li><a href="https://jimenaq25.github.io/Jimena-Sofia-Quiroz-Bautista/" target="_blank">Jimena Quiroz Bautista</a></li>
-                    <li><a href="https://ismael-caceres.github.io/Ismael-Valentin-Caceres-Gallegos/" target="_blank">Ismael Caceres Gallegos</a></li>
-                    <li><a href="https://perfil.com/lucia_mendez" target="_blank">Lucía Méndez</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <section>
+      <h2>Estudios</h2>
+      <ul>
+        <li><strong>Educación Primaria y Secundaria:</strong>
+          <ul>
+            <li><a href="https://web.facebook.com/CERSANTACATALINAJULIACA/" target="_blank">Colegio Santa Catalina - Juliaca</a></li>
+          </ul>
+        </li>
+        <li><strong>Educación Superior:</strong>
+          <ul>
+            <li>Carrera: Administración de Negocios</li>
+            <li>Universidad Católica San Pablo - Arequipa</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-    <script>
-        function toggleDropdown() {
-            var dropdown = document.getElementById("dropdown-list");
-            dropdown.classList.toggle("show");
-        }
-    </script>
+    <section>
+      <h2>UCSP - 5º Semestre</h2>
+      <ul>
+        <li><strong>Cálculo en una variable</strong> – Docente: <a href="https://www.linkedin.com/in/maribel-marianela-8453a61a7/" target="_blank">Maribel Quiroz</a></li>
+        <li><strong>Pensamiento computacional</strong> – Docente: <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Ernesto Cuadros</a></li>
+        <li><strong>Estadística y probabilidades</strong> – Docente: Daniel Huanca</li>
+        <li><strong>Startups I</strong> – Docente: <a href="https://www.linkedin.com/in/karenguti%C3%A9rrezmart%C3%ADnez/" target="_blank">Karen Gutierrez</a></li>
+        <li><strong>Análisis, Diseño y Gestión de Procesos</strong> – Docente: <a href="https://www.linkedin.com/in/alfredo-salinas-49a994151/" target="_blank">Alfredo Salinas</a></li>
+        <li><strong>Desarrollo de Habilidades de Negociación</strong> – Docente: <a href="https://www.linkedin.com/in/rmenchola/" target="_blank">Renzo Menchola</a></li>
+      </ul>
+
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown()">Ver Compañeros</button>
+        <div class="dropdown-content" id="dropdown-list">
+          <a href="https://jimenaq25.github.io/Jimena-Sofia-Quiroz-Bautista/" target="_blank">Jimena Quiroz Bautista</a>
+          <a href="https://ismael-caceres.github.io/Ismael-Valentin-Caceres-Gallegos/" target="_blank">Ismael Cáceres Gallegos</a>
+          <a href="https://perfil.com/lucia_mendez" target="_blank">Lucía Méndez</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function toggleDropdown() {
+      document.getElementById("dropdown-list").classList.toggle("show");
+    }
+  </script>
 
 </body>
 </html>
